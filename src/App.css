@@ -1,0 +1,495 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#navBar {
+    display: flex;
+    justify-content: space-between;
+    margin: auto 5%;
+}
+
+#navButton {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.navButtons {
+    font-size: larger;
+    font-weight: 600;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+}    
+
+#tagContainer {
+    display: flex; 
+    justify-content: space-between;
+
+    margin:  100px;
+}
+
+#tagline {
+    font-size: 50px;
+    align-self: center;
+    margin: auto 100px;
+  font-weight: 550;
+    font-family: 'Roboto', sans-serif;
+    min-height: 200px;
+}
+
+#tagline #typinganimation {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2.5s steps(35) forwards;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+#subTagline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin-top: 20px;
+    padding: 50px 100px;
+
+}
+
+#launchButton {
+    display: flex;
+    margin-left: 100px;
+    gap: 50px;
+    max-width: 100%;
+}
+
+.lbutton {
+    width: 200px;
+    height: 50px;
+}
+
+#tagimage {
+    max-height: 600px; 
+    border-radius: 20px;
+    position: relative;
+    transition: left 1s ease;
+}
+
+.rightAnimation {
+    animation: moveRightAnimation 2s forwards;
+}
+
+@keyframes moveRightAnimation {
+    from {
+        transform: translateX(100px);
+      }
+      to {
+        transform: translateX(0);
+      }
+}
+
+.leftanimation {
+    animation: moveLeftAnimation 2s forwards;
+}
+
+@keyframes moveLeftAnimation  {
+    from {
+         transform: translateX(-100px);
+    }
+    to {
+        transform: translateX(0px);
+    }
+}
+
+
+
+
+#firstSection {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 100px;
+    margin-top: 100px;
+
+}
+
+#secondSection {
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto 100px;
+    margin-top: 100px;
+
+}
+
+#sectionOneImage {
+    max-height: 600px;
+    border-radius: 20px;
+    position: relative;
+}
+
+#sectionTwoImage {
+    max-height: 600px;
+    border-radius: 20px;
+    position: relative;
+}
+
+
+.sectionContainer {
+ display: flex ;
+ max-height: auto;
+}
+
+.mainTitle  {
+
+    font-size: 35px;
+    font-family: 'Roboto', sans-serif;
+    margin: auto 50px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: larger;
+    margin-top: 20px;
+    padding: 50px 100px;
+}
+
+.hrline {
+    margin-right: 50%;
+}
+
+
+
+.gifSection {
+   margin:  50px;
+}
+
+.gif {
+    height: 100px;
+}
+
+.gifContent {
+font-weight: 550;
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.gifContainer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10%;
+}
+
+
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    height: 200px;
+    width: 100%;
+    background-color: #213555;
+    box-shadow: 1px 1px 20px black;
+  }
+  
+  .tryoutbutton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+  }
+  
+  #footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 250px;
+    background-color: #001C30;
+  }
+  
+  #info {
+    padding: 2% 0 0 3%;
+  }
+  
+  #realcontact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5%;
+  }
+  
+  .icon {
+    color: black;
+  }
+
+/* below detection css */
+
+.displaybox {
+    height : 150px ;
+    width: 400px; 
+    background-color: #001C30;
+    box-shadow: 1px 1px 20px black;
+    border-radius: 10px;
+    }
+    
+    .displayfont {
+      color: #E55604;
+      font-size: 150%;
+      margin-bottom: 10px;
+    }
+    
+    #displaycontainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+    padding-left: 300px;
+    }
+      
+
+    .Detection {
+        text-align: center;
+      }
+      
+      
+      
+      
+      .Detection-header {
+        background-color : white;
+        min-height: 80vh;
+        position: relative;
+        font-size: calc(10px + 2vmin);
+        color: white;
+      }
+      
+
+      .detectframe {
+        
+        margin : auto ;
+        position: absolute;
+        left: 60%;
+        top: 60px;
+        text-align: center;
+        width: 640;
+        height: 480;
+        border-radius: 20px;
+        box-shadow: 2px 2px 30px black
+      }
+
+      @media (max-width: 1624px) {
+         
+        #logo {
+            height: 50px;
+        }
+
+
+        #tagContainer {
+            flex-direction: column-reverse;
+            align-items: center;
+            height: auto;
+        }
+
+        #tagimage {
+            max-width: 100%;
+            margin-bottom: 5px;
+        }
+        
+        #tagline {
+            font-size: 40px;
+        }
+
+        #firstSection {
+            height: auto; 
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            margin: auto 20px; 
+            margin-top: 50px; 
+        }
+
+        #secondSection {
+            flex-direction: column-reverse;
+        }
+
+        
+        #sectionOneImage {
+            max-width: 100%; 
+            height: auto;
+            border-radius: 20px;
+            margin-bottom: 20px; 
+        }
+        
+        .sectionContainer {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            max-width: 100%; 
+        }
+        
+        .mainTitle {
+            font-size: 25px; 
+            font-family: 'Roboto', sans-serif;
+            text-align: center; 
+            margin: 20px 0; 
+        }
+        
+        .content {
+            font-size: larger; 
+            margin: 20px; 
+           
+            padding: 25px  50px;
+        }
+
+        .hrline {
+            margin-right: 30%;
+            margin: 1% 30%;
+        }
+        
+        .gifSection {
+            margin: 20px; 
+        }
+        
+        .gif {
+            height: 50px; 
+        }
+        
+        .gifContent {
+            font-weight: 550;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        
+        .gifContainer {
+            display: flex;
+            flex-direction: column; 
+            align-items: center; 
+            gap: 10%;
+        }
+
+
+        .detectframe {
+            left: 50%;
+            transform: translateX(-50%);
+            top: 20px; 
+          }
+        
+          #displaycontainer {
+            padding-left: 0;
+          }
+
+          #displayboxcontainer {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            margin-top: 550px;
+            margin-bottom: 20px;
+          }
+
+          .displayfont2 {
+            
+            font-size: 90%;
+          }
+
+
+        @media (max-width : 600px) {
+            #logo {
+                height: 30px;
+            }
+
+            
+     
+
+            #tagline {
+                font-size: 25px;
+                margin: auto 50px;
+                font-size: 25px;
+                width: 80%;
+                min-height: auto;
+            }
+
+            #subTagline {
+                padding: 25px 30px;
+            }
+
+            #tagimage {
+                max-width: 100vw;
+            }
+
+            .content {
+                font-size: smaller;
+                margin: 0;
+                padding: 0;
+            }
+
+            #secondSection {
+               width: 80%; 
+               margin: auto;
+
+            }
+
+            #sectionTwoImage {
+               max-width: 100%;
+            }
+
+            #navBar {
+                justify-content: flex-start;
+                gap: 3%;
+            }
+
+            .navButtons {
+                font-size: small;
+                margin-right: 20%;
+                
+            }
+
+            .lbutton {
+                width: 150px;
+                height: 40px;
+            }
+
+            .detectframe {
+                width: auto;
+                height: 50% ;
+
+            }
+            
+            #displayboxcontainer {
+              margin-top: 450px;
+            }
+
+            @media (max-width : 400px) {
+                
+                .detectframe {
+                    width: auto;
+                    height: 40% ;
+    
+                }
+
+                #displayboxcontainer {
+                    margin-top: 350px;
+                  }
+
+
+            }
+            
+        }
+        
+      }      
